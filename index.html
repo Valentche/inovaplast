@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INOVAPLAST - Portal de Segurança da Informação</title>
+    <style>
+        :root {
+            --primary-blue: #003366; /* Azul da logo */
+            --accent-green: #339933; /* Verde da logo */
+            --bg-color: #f4f7f6;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 4px solid var(--primary-blue);
+        }
+
+        .logo-placeholder {
+            margin-bottom: 15px;
+        }
+
+        /* Se tiver o arquivo logo.png, a tag abaixo funcionará */
+        .logo-placeholder img {
+            max-width: 280px;
+            height: auto;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 10px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+            border-top: 5px solid var(--primary-blue);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--accent-green);
+        }
+
+        .card h3 {
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+            margin-top: 0;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #475569;
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background-color: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-green);
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo-placeholder">
+            <img src="Logo Inovaplat.png" alt="INOVAPLAST Indústria de Plásticos">
+        </div>
+        <h1>Política de Segurança da Informação</h1>
+        <p>Gestão de Ativos e Normas de Conduta - TI Terceirizada</p>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h3>1. Política Geral (PGSI)</h3>
+            <p>Diretrizes mestras para garantir a confidencialidade e integridade dos processos industriais de plásticos.</p>
+            <a href="Arquivos_pdf/PGSI.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>2. Termo de Uso (TUSI)</h3>
+            <p>Aceite formal sobre o uso exclusivamente profissional dos recursos e sistemas da indústria.</p>
+            <a href="Arquivos_pdf/TUSI.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>3. Acesso Remoto</h3>
+            <p>Regras para conexão externa segura ao ambiente fabril via VPN ou TI terceirizada.</p>
+            <a href="Arquivos_pdf/Acesso_Remoto.pdf.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>4. Equipamentos Pessoais</h3>
+            <p>Normas para uso de celulares e laptops particulares (BYOD) no ambiente da fábrica.</p>
+            <a href="Arquivos_pdf/BYOD.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>5. Classificação de Dados</h3>
+            <p>Critérios de rotulagem e descarte de fórmulas, projetos e dados confidenciais.</p>
+            <a href="Arquivos_pdf/Classificacao_info.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>6. Códigos Maliciosos</h3>
+            <p>Proteção antivírus obrigatória e comportamento preventivo contra ameaças digitais.</p>
+            <a href="Arquivos_pdf/Cod-malicioso.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>7. E-mail e Comunicação</h3>
+            <p>Uso aceitável do e-mail corporativo e ferramentas de mensagem da INOVAPLAST.</p>
+            <a href="Arquivos_pdf/Uso de e-mails.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>8. Gestão de Identidade</h3>
+            <p>Controle de senhas e níveis de acesso aos sistemas de produção e administrativos.</p>
+            <a href="Arquivos_pdf/Gestao-ident.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>9. Internet e Mídias Sociais</h3>
+            <p>Regras de navegação e comportamento ético em redes sociais sobre a empresa.</p>
+            <a href="Arquivos_pdf/Internet-mid-soc.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>10. Monitoramento</h3>
+            <p>Vigilância de ativos, tráfego de rede e CFTV nas dependências da indústria.</p>
+            <a href="Arquivos_pdf/Monitoramento.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>11. Resposta a Incidentes</h3>
+            <p>Protocolos de contenção e erradicação de falhas de segurança pela equipe de TI.</p>
+            <a href="Arquivos_pdf/Resposta a incidentes.pdf" class="btn">Visualizar PDF</a>
+        </div>
+
+        <div class="card">
+            <h3>12. Uso de Ativos</h3>
+            <p>Regras para preservação de hardware, impressoras e segurança física da fábrica.</p>
+            <a href="Arquivos_pdf/Uso_aceitavel.pdf" class="btn">Visualizar PDF</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
